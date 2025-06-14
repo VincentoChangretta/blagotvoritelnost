@@ -1,0 +1,33 @@
+.primaryBtn {
+    position: relative;
+    overflow: hidden;
+}
+
+.primaryBtn::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: -50%;
+    right: 100%;
+    width: 30px;
+    height: 250%;
+    background-color: rgba(255, 255, 255, .4);
+    transform: rotate(20deg);
+    filter: blur(7px);
+    animation: animLighting 5s ease infinite;
+}
+
+@keyframes animLighting {
+    0% {
+        translate: 0 0;
+    }
+
+    15% {
+        translate: 500px 0;
+    }
+
+    100% {
+        translate: 500px 0;
+    }
+
+}

@@ -1,0 +1,16 @@
+import { Image } from 'shared/ui/Image/Image';
+
+interface LogoProps {
+   className?: string;
+}
+
+export const Logo = (props: LogoProps) => {
+   const { className } = props;
+   return (
+      <div className={`${className} max-500:max-w-[200px]`}>
+         <a href='/' className='inline-block w-fit'>
+            <Image imgBoxClassName={`max-w-[250px] `} src='/logo.webp' alt='лого' />
+         </a>
+      </div>
+   );
+};
