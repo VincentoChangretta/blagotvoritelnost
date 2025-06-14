@@ -20,4 +20,6 @@ export default defineConfig({
       outDir: 'dist', // Убедитесь, что вывод идет в папку dist
       emptyOutDir: true, // Удаляет все файлы из папки dist перед новой сборкой
    },
+   base: '/blagotvoritelnost/',
+   publicDir: 'public',
 });
