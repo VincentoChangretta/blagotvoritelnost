@@ -1,6 +1,7 @@
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import { BASE_URL } from 'shared/types/types';
 import { Logo } from 'widgets/Logo/Logo';
 
 export const Header = () => {
@@ -13,8 +14,6 @@ export const Header = () => {
    const handleCloseNav = () => {
       setBurger(false);
    };
-
-
 
    return (
       <header className=' bg-mainGreen mb-10'>
@@ -45,22 +44,22 @@ export const Header = () => {
                   </div>
                   <ul className='relative flex gap-5 font-bold max-1300:flex-col max-1300:text-center max-1300:items-center'>
                      <li>
-                        <a href='#fond' onClick={handleCloseNav}>
+                        <a href={`${BASE_URL}#fond`} onClick={handleCloseNav}>
                            О фонде
                         </a>
                      </li>
                      <li>
-                        <a href='#podderjka' onClick={handleCloseNav}>
+                        <a href={`${BASE_URL}#podderjka`} onClick={handleCloseNav}>
                            Поддержать
                         </a>
                      </li>
                      <li>
-                        <a href='#volonter' onClick={handleCloseNav}>
+                        <a href={`${BASE_URL}#volonter`} onClick={handleCloseNav}>
                            Стать волонтером
                         </a>
                      </li>
                      <li>
-                        <a href='#kontakt' onClick={handleCloseNav}>
+                        <a href={`${BASE_URL}#kontakt`} onClick={handleCloseNav}>
                            Контакты
                         </a>
                      </li>
