@@ -1,4 +1,5 @@
 import { RUBLE } from 'shared/components/Сonst/const';
+import { USER_IMG } from 'shared/types/types';
 import { Image } from 'shared/ui/Image/Image';
 import { Subtitle } from 'shared/ui/Subtitle/Subtitle';
 import { Title } from 'shared/ui/Title/Title';
@@ -75,7 +76,7 @@ export const Feedbacks = () => {
                               <div className='mb-5'>
                                  <div className='flex items-center gap-5 mb-3'>
                                     <Image
-                                       src='/user.webp'
+                                       src={USER_IMG}
                                        imgBoxClassName='w-[70px] h-[70px]'
                                        imgClassName='rounded-stdRadius'
                                        alt='аватар'

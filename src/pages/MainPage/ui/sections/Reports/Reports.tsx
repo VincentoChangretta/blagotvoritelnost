@@ -7,8 +7,9 @@ import 'swiper/css/pagination';
 import { Image } from 'shared/ui/Image/Image';
 import { Title } from 'shared/ui/Title/Title';
 import { Subtitle } from 'shared/ui/Subtitle/Subtitle';
+import { SLIDER_BG_IMG } from 'shared/types/types';
 
-const imgArray = ['bgbg.webp', 'bgbg.webp', 'bgbg.webp', 'bgbg.webp'];
+const imgArray = [SLIDER_BG_IMG, SLIDER_BG_IMG, SLIDER_BG_IMG, SLIDER_BG_IMG];
 
 export const Reports = () => {
    return (
@@ -31,9 +32,14 @@ export const Reports = () => {
                      pagination={{ clickable: true }}
                      loop={true}
                   >
-                     {imgArray.map(slide => (
-                        <SwiperSlide>
-                           <Image src={`/${slide}`} imgBoxClassName='h-[800px] max-1100:h-[400px]' imgClassName='' alt='фото' />
+                     {imgArray.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                           <Image
+                              src={slide}
+                              imgBoxClassName='h-[800px] max-1100:h-[400px]'
+                              imgClassName=''
+                              alt='фото'
+                           />
                         </SwiperSlide>
                      ))}
                   </Swiper>

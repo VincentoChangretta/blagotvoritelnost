@@ -6,6 +6,7 @@ import { Button, ButtonThemes } from 'shared/ui/Button/Button';
 import { AppRoutes } from 'shared/config/routesConfig/routeConfig';
 import { currentGoalActions, goalsData, GoalsDataType } from 'entities/CurrentGoal';
 import { useDispatch } from 'react-redux';
+import { ZVEZDA_GREEN_IMG } from 'shared/types/types';
 
 export const Goals = () => {
    const dispatch = useDispatch();
@@ -13,7 +14,6 @@ export const Goals = () => {
    const handleOpen = (goal: GoalsDataType) => {
       dispatch(currentGoalActions.add(goal));
    };
-   const handleOnClose = () => {};
 
    return (
       <section id='celi'>
@@ -55,7 +55,7 @@ export const Goals = () => {
                         </div>
                         <Image
                            imgBoxClassName='absolute -bottom-[100px] -right-2/4 w-[140%] opacity-35'
-                           src='/zvezdaGreen.webp'
+                           src={ZVEZDA_GREEN_IMG}
                            alt='звезда'
                         />
                      </article>

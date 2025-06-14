@@ -1,3 +1,4 @@
+import { MAIN_IMG, ZVEZDA_IMG } from 'shared/types/types';
 import { Button, ButtonThemes } from 'shared/ui/Button/Button';
 import { Image } from 'shared/ui/Image/Image';
 import { Subtitle } from 'shared/ui/Subtitle/Subtitle';
@@ -9,7 +10,7 @@ export const MainTop = () => {
          <div className='std-container '>
             <div className='relative z-10 flex justify-between items-center gap-[50px] max-1100:flex-col-reverse max-1100:gap-2.5'>
                <Image
-                  src='/main.webp'
+                  src={MAIN_IMG}
                   alt='Главная фотография'
                   imgBoxClassName='max-w-[600px] shrink-0 max-1300:shrink-1 max-1100:max-w-[500px]'
                   imgClassName='rounded-stdRadius'
@@ -37,7 +38,7 @@ export const MainTop = () => {
             </div>
          </div>
          <Image
-            src='/zvezda.webp'
+            src={ZVEZDA_IMG}
             alt='звезда'
             imgBoxClassName='max-500:hidden absolute z-0 top-[150px] right-[110px] max-w-[1000px] w-full opacity-25 pointer-events-none max-1300:right-[-330px]'
          />

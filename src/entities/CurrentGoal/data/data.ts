@@ -1,3 +1,5 @@
+import { MEDICAL_IMG, SOCIAL_IMG, TECH_IMG } from 'shared/types/types';
+
 export interface GoalsDataType {
    id: number;
    name: string;
@@ -25,7 +27,7 @@ export const goalsData: GoalsDataType[] = [
       ],
       remains: '2 300 240',
       allPrice: '5 114 400',
-      img: '/tech.webp',
+      img: TECH_IMG,
    },
    {
       id: 2,
@@ -41,7 +43,7 @@ export const goalsData: GoalsDataType[] = [
       ],
       remains: '200 230',
       allPrice: '500 000',
-      img: '/medical.webp',
+      img: MEDICAL_IMG,
    },
    {
       id: 3,
@@ -53,6 +55,6 @@ export const goalsData: GoalsDataType[] = [
       ],
       remains: '140 230',
       allPrice: '500 000',
-      img: '/social.webp',
+      img: SOCIAL_IMG,
    },
 ];

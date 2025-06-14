@@ -1,4 +1,3 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 
 interface LightBallProps {
@@ -9,5 +8,5 @@ interface LightBallProps {
 export const LightBall = (props: LightBallProps) => {
    const { className, blurValue } = props;
    const { t } = useTranslation();
-   return <div className={classNames(`absolute rounded-full blur-[80px]`, {}, [className])}></div>;
+   return <div className={`absolute rounded-full blur-[80px] ${className} ${blurValue}`}></div>;
 };

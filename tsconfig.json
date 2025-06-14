@@ -1,12 +1,13 @@
 {
    "compilerOptions": {
-      "outDir": "./dist", // Указываем, куда компилировать файлы
-      "rootDir": "./src", // Указываем корень исходных файлов
-      "target": "ESNext",
-      "module": "ESNext",
-      "moduleResolution": "node",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "module": "esnext",
+      "target": "esnext",
+      "moduleResolution": "bundler",
       "jsx": "react-jsx",
       "baseUrl": "./src",
+      "skipLibCheck": true,
       "paths": {
          "*": ["*"]
       },

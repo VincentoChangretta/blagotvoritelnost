@@ -1,4 +1,4 @@
-import { CurrentGoalSchema } from "entities/Testing/model/types/currentGoalSchema";
+import type { CurrentGoalSchema } from 'entities/CurrentGoal';
 
 export interface StateSchema {
    currentGoal: CurrentGoalSchema;

@@ -13,8 +13,6 @@ export const RutubeIframe = (props: RutubeIframeProps) => {
          src={link}
          frameBorder='0'
          allow='clipboard-write; autoplay'
-         webkitAllowFullScreen
-         mozallowfullscreen
          allowFullScreen
       ></iframe>
    );
